@@ -24,7 +24,7 @@ class ImageToWordModel(OnnxInferenceModel):
         return text
 
 def wordPredict(imgDir):
-    model = ImageToWordModel(model_path="Models/08_handwriting_recognition_torch/202410180902/model.onnx")
+    model = ImageToWordModel(model_path="Models/202410180902/model.onnx")
     
     img = cv2.imread(imgDir)
     pred = model.predict(img)

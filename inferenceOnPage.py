@@ -65,7 +65,7 @@ def createWords(pageDir: str, imgHeight = 1000, kernelSize = 25, sigma = 11, the
 def wordPredict(wordFolder = os.path.join("Inference", "Words")):
     imgFiles = os.listdir(wordFolder)
 
-    model = ImageToWordModel(model_path="Models/08_handwriting_recognition_torch/202410180902/model.onnx")
+    model = ImageToWordModel(model_path="Models/202410180902/model.onnx")
 
     for imgName in imgFiles:
         imgDir = os.path.join(wordFolder, imgName)
